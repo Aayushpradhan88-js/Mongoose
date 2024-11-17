@@ -30,9 +30,7 @@ app.get("/read", async (req, res) => {
 
     // findOne -- It find the only one user data. if there is one user with different data then also it will find and give one userdata.
     let userRead = await userModel.findOne({ name: 'Ayush Pradhan' });
-
     res.send(userRead);
-
 })
 
 //In this method we can update the user details.
